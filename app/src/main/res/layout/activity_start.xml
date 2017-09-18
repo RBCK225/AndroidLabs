@@ -13,29 +13,9 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="@string/TitleText" />
+        android:text="@string/hello_message"
+        android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="@string/LoginPlaceholder"
-        />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Password" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button"
