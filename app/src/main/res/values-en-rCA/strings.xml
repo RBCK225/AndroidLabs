@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AndroidLabs</string>
-    <string name="hello_message">Hello Canada!!</string>
-    <string name="ButtonText">I\'m a button eh!</string>
+    <string name="hello_message">Hello World!</string>
+    <string name="ButtonText">I\'m a button</string>
+    <string name="TitleText">Login</string>
+    <string name="LoginPlaceholder">Login Name</string>
+    <string name="Password">Password</string>
+    <string name="SwitchText">What does this do?</string>
+    <string name="RadioButtonText">Radio Button</string>
+    <string name="CheckBoxText">Checkbox</string>
+
 </resources>
