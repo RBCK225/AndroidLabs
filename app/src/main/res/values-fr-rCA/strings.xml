@@ -5,7 +5,7 @@
     <string name="TitleText">Connexion</string>
     <string name="LoginPlaceholder">Nom d'utilisateur</string>
     <string name="Password">Mot de passe</string>
-    <string name="SwitchText">Qu'est-ce que cela fait?</string>
+    <string name="SwitchText">Qu\'est-ce que cela fait?</string>
     <string name="RadioButtonText">Bouton radio</string>
     <string name="CheckBoxText">Case à cocher</string>
 
