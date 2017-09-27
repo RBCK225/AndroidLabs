@@ -8,5 +8,6 @@
     <string name="SwitchText">Qu\'est-ce que cela fait?</string>
     <string name="RadioButtonText">Bouton radio</string>
     <string name="CheckBoxText">Case à cocher</string>
+    <string name="LogInButton">Connecter</string>
 
 </resources>

@@ -8,5 +8,6 @@
     <string name="SwitchText">What does this do?</string>
     <string name="RadioButtonText">Radio Button</string>
     <string name="CheckBoxText">Checkbox</string>
+    <string name="LogInButton">Log In</string>
 
 </resources>
