@@ -9,13 +9,6 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="81dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_message"
-        android:textStyle="bold" />
-
 
     <Button
         android:id="@+id/button"
@@ -26,5 +19,13 @@
         android:text="@string/ButtonText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:text="@string/hello_message"
+        android:textStyle="bold" />
 
 </LinearLayout>

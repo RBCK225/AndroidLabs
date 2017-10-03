@@ -28,15 +28,9 @@ public class LoginActivity extends Activity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //About to finish the activity and pass information back:
                 Intent intent = new Intent(LoginActivity.this, StartActivity.class);
                 startActivity(intent);
 
-                //Now set the data to be returned:
-                // setResult(2, intent);
-                // and finish the activity:
-                finish();
             }
         });
     }
