@@ -66,7 +66,7 @@ public class ListItemsActivity extends Activity {
 
         myCheck.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
+            if (isChecked == true) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ListItemsActivity.this);
                 // 2. Chain together various setter methods to set the dialog characteristics
                 builder.setMessage("Would you like to finish the activity?") //Add a dialog message to strings.xml
@@ -74,7 +74,7 @@ public class ListItemsActivity extends Activity {
                         .setTitle("Attention")
                         .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                Intent resultIntent = new Intent(  );
+                                Intent resultIntent = new Intent();
                                 resultIntent.putExtra("Response", "Here is my response");
                                 setResult(Activity.RESULT_OK, resultIntent);
                                 finish();
@@ -88,7 +88,7 @@ public class ListItemsActivity extends Activity {
                         })
                         .show();
 
-
+            }
             }
         });
     }
