@@ -11,5 +11,6 @@
     <string name="LogInButton">Log In</string>
     <string name="StartChat">Start Chat</string>
     <string name="SendMessage">Send</string>
+    <string name="WeatherForecast">Weather Forecast</string>
 
 </resources>
