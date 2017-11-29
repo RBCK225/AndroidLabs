@@ -77,8 +77,6 @@ public class WeatherForecast extends AppCompatActivity {
                 Log.d(ACTIVITY_NAME, "reading");
                 iStream = conn.getInputStream();
 
-                Log.d(ACTIVITY_NAME, "stream: " + iStream);
-
                 XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
                 factory.setNamespaceAware(true);
                 XmlPullParser xpp = factory.newPullParser();
@@ -95,6 +93,7 @@ public class WeatherForecast extends AppCompatActivity {
                             publishProgress(25);
                             minTempValue = xpp.getAttributeValue(null, "min");
                             publishProgress(50);
+                            Log.i(ACTIVITY_NAME, "progress @ 50% ");
                             maxTempValue = xpp.getAttributeValue(null, "max");
                             publishProgress(75);
                         } else if (xpp.getName().equals("weather")) {
@@ -105,7 +104,7 @@ public class WeatherForecast extends AppCompatActivity {
                 }
                 conn.disconnect();
 
-                if(fileExist(currentWeather + ".png")){
+                if(fileExist(currentWeather + ".png")) {
                     Log.i(ACTIVITY_NAME, "Weather image exists");
                     File file = getBaseContext().getFileStreamPath(currentWeather + ".png");
                     FileInputStream fis = new FileInputStream(file);
@@ -148,9 +147,9 @@ public class WeatherForecast extends AppCompatActivity {
 
         public void onPostExecute(String s){
             weatherProgress.setVisibility(View.INVISIBLE);
-            currentTemp.setText("Current: " + currentTempValue + "C");
-            minTemp.setText("Min: " + minTempValue + "C");
-            maxTemp.setText("Max: " + maxTempValue + "C");
+            currentTemp.setText("Current: " + currentTempValue + "°c");
+            minTemp.setText("Min: " + minTempValue + "°c");
+            maxTemp.setText("Max: " + maxTempValue + "°c");
             weatherImage.setImageBitmap(bitmap);
         }
         public boolean fileExist(String name){
