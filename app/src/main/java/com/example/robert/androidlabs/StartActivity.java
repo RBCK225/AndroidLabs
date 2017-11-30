@@ -17,7 +17,7 @@ public class StartActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        Button startActivityButton =  (Button) findViewById(R.id.button) ;
+        Button startActivityButton = (Button) findViewById(R.id.button);
 
         startActivityButton.setOnClickListener(new View.OnClickListener() {
 
@@ -25,6 +25,31 @@ public class StartActivity extends Activity {
             public void onClick(View view) {
                 Intent startIntent = new Intent(getApplicationContext(), ListItemsActivity.class);
                 startActivityForResult(startIntent, 10);
+
+            }
+        });
+
+        Button chatStart = findViewById(R.id.button4);
+
+        chatStart.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("StartActivity", "User clicked Start Chat");
+                Intent chatIntent = new Intent(getApplicationContext(), ChatWindow.class);
+                startActivityForResult(chatIntent, 10);
+            }
+
+        });
+
+        Button weatherForecast = (Button) findViewById(R.id.button5);
+
+        weatherForecast.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent weatherIntent = new Intent(getApplicationContext(), WeatherForecast.class);
+                startActivityForResult(weatherIntent, 10);
 
             }
         });
