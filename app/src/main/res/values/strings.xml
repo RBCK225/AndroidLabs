@@ -12,5 +12,7 @@
     <string name="StartChat">Start Chat</string>
     <string name="SendMessage">Send</string>
     <string name="WeatherForecast">Weather Forecast</string>
+    <string name="title_activity_test_tool_bar">TestToolBar</string>
+    <string name="title_activity_testtest">TesttestActivity</string>
 
 </resources>
